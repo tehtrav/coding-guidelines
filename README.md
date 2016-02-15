@@ -1,2 +1,2 @@
-# coding-guidelines
-Coding guidlines for the WebstaurantStore design team
+# front-end-groundwork
+A gulp based front-end dev setup

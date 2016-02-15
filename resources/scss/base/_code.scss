@@ -1,0 +1,15 @@
+// Reset code formatting from bootstrap
+pre {
+    background: none !important;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+// Use highlightjs formatting for code block
+pre .hljs {
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 8px rgba(black, .5) inset;
+    background-color: #282C34;
+}
