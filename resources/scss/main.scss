@@ -1,3 +1,7 @@
+// Variables used in project
+@import 'base/variables';
+
+
 // Vendor
 // ---------
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
@@ -6,10 +10,13 @@
 // ---------
 
 // Base
-@import 'base/variables';
 @import 'base/typography';
 @import 'base/lists';
 @import 'base/code';
 
 // Utilities
 @import 'utilities/margin-helpers';
+
+// Components
+@import 'components/hero-mast';
+@import 'components/documentation-nav';
