@@ -40,7 +40,7 @@
                 </ul>
 			</div>
 			<div class="col-md-9">
-                <section class="page-section">
+                <section class="page-section documentation-section">
                     <h1 class="page-header">SCSS/CSS Guidelines</h1>
                     <h2>Syntax formatting and spacing</h2>
                     <div class="content-chunk">
@@ -222,7 +222,7 @@ margin: 0px;</code></pre>
 }</code></pre>
 
                 </section>
-                <section>
+                <section class="page-section documentation-section">
                     <h1 class="page-header">HTML Guidelines</h1>
                     <h2>General formatting</h2>
                     <ul>
@@ -236,6 +236,16 @@ margin: 0px;</code></pre>
 &lt;input type="checkbox" value="1" checked&gt;</code></pre>
 
                 </section>
+
+                <section class="page-section documentation-section">
+                    <h1 class="page-header">Modular CSS &amp; HTML</h1>
+                    <p>
+
+                    </p>
+
+
+                </section>
+
 			</div><!-- column -->
 		</div>
 	</div>

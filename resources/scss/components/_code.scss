@@ -1,0 +1,15 @@
+.hljs-selector-class {
+    color: lighten($brand-primary, 8%);
+}
+
+.hljs-attribute {
+    color: #88969f;
+}
+
+.hljs-number {
+    color: $brand-success;
+}
+
+.hljs-string {
+    color: lighten($brand-primary, 12%);
+}

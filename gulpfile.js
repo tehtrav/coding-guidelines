@@ -92,7 +92,7 @@ gulp.task('watch', function() {
     gulp.watch('resources/js/*.js', ['scripts']);
     gulp.watch('*.php').on('change', livereload.changed);
     gulp.watch('*.html').on('change', livereload.changed);
-    //gulp.watch('*').on('change', livereload.changed);
+    gulp.watch('*').on('change', livereload.changed);
 });
 
 gulp.task('default', ['styles','scripts', 'watch']);
