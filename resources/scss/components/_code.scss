@@ -1,9 +1,9 @@
-.hljs-selector-class {
-    color: lighten($brand-primary, 8%);
+pre {
+    margin-bottom: 20px;
 }
 
-.hljs-attribute {
-    color: #88969f;
+.hljs-selector-class {
+    color: lighten($brand-primary, 18%);
 }
 
 .hljs-number {
@@ -11,5 +11,5 @@
 }
 
 .hljs-string {
-    color: lighten($brand-primary, 12%);
+    color: lighten($brand-primary, 15%);
 }

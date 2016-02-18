@@ -1,0 +1,61 @@
+blockquote {
+    position: relative;
+    border: 0;
+    border-radius: $border-radius-base;
+    background-color: tint($gray, 94%);
+    padding: 30px 40px;
+    margin: 40px 0;
+    overflow: hidden;
+    quotes: "\201C""\201D""\2018""\2019";
+
+    // Small devices get standard quotes
+    @media (max-width: 599px) {
+        p {
+            &:first-child:before {
+                content: open-quote;
+            }
+            &:last-of-type:after {
+                content: close-quote;
+            }
+        }
+    }
+
+    // Large devices get stylized quote
+    @media (min-width: 600px) {
+        font-size: 2.3rem;
+        padding: 30px 100px;
+        &:before,
+        &:after {
+            position: absolute;
+            left: 12px;
+            top: 10px;
+        }
+
+        // Circle
+        &:before {
+            @include square(76px);
+            content: " ";
+            border-radius: 50px;
+            background: $brand-primary;
+            left: -5px;
+            top: 17px;
+        }
+
+        // Quote
+        &:after {
+            content: open-quote;
+            font-size: 100px;
+            font-family: Georgia;
+            text-align: center;
+            color: white;
+        }
+    }
+
+
+
+
+
+    footer {
+        font-size: 1.5rem;
+    }
+}
