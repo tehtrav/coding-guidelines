@@ -12,7 +12,7 @@
 <body>
 	<div id="hero-mast" class="jumbotron">
         <div class="container">
-            <h1>Coding Guidlines</h1>
+            <h1>Coding Guidelines</h1>
             <p>Some best-practice rules to follow when writing Front-End code for internal &amp; external Clark projects.</p>
         </div>
     </div>

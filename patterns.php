@@ -25,78 +25,14 @@
 			</div>
 			<div class="col-md-9">
                 <section id="syntax-formatting-and-spacing" class="page-section documentation-section">
-                    <h1 class="page-header">SCSS/CSS Guidelines</h1>
-                    <h2 id="document-every-file">Document Every New File</h2>
-
-                    <pre><code class="css">/*------------------------------------------------------------------
-CONTENT.LESS
-
-Description:   Styles primarily for content within buying guides and articles
-Output:        This is imported in styles-bottom *and* outputs its own content.css for use in the admin tool for previewing styles
-Created by:    Josiah
-Modified:      9/22/16
-Modified by:   Travis
-Edit notes:    Added header comment block
--------------------------------------------------------------------*/</code></pre>
-
+                    <h1 class="page-header">Design Pattern Reference</h1>
+                    <p class="large-text">This page is for keeping a record of common front-end development patterns that are seldom used and easy to forget.</p>
+                    <h2>Reversed font rendering</h2>
                     <div class="content-chunk">
-                      <p>The above block should be included at the start of every .LESS/.SCSS file. Keep the modification notes up to date when significant changes are done to any file.</p>
-                    </div>
-
-					<h2>Creating &amp; Naming New Stylesheets</h2>
-					<div class="content-chunk">
-						<p>To keep our style library accessible and to keep our CSS minimal please consider the following when you go to create a new stylesheet.</p>
-
-						<ul>
-							<li>Why am I creating a new stylesheet?</li>
-							<li>Can I reuse pre-exisiting styles?</li>
-							<li>Will these styles be needed globally?</li>
-						</ul>
-
-						<h3>Types of Stylesheets</h3>
-						<ul>
-							<li><strong>Direct Output:</strong> References styles-bottom but doesn't get compiled globally. Output's its own CSS file.</li>
-							<li><strong>Global:</strong> Imported globally by styles-bottom and doesn't generate a direct output</li>
-							<li><strong>Global + Direct Output:</strong> Included in styles-bottom and has a direct output</li>
-							<li><strong>Parent:</strong> Imports a list of all global stylesheets</li>
-						</ul>
-
-						<h3>Direct Output</h3>
-						<p>If the project you are working on is going to be used for a one-off page or corner of the site (ex: Checkout, My Account, etc.) please do not include it in styles-bottom. This helps us keep load times down across the site and prevents loading excess styles globally.</p>
-						<p>Standalone stylesheets are documented by using the convention <code>styles-stylesheet-name</code> and should import and reference "styles-bottom". This reference establishes what code (if any) your standalone file is using from styles-bottom in order to compile correctly.</p>
-						<pre><code>@import (reference) "styles-bottom.less";
-
-@import "stylesheet-name.less";
-</code></pre>
-
-						<!-- <h3>Adding A New Stylesheet</h3>
-						<p>If the project you are working on is going to be used for a one-off page or corner of the site (ex: Checkout, My Account, etc.) please do not include it in styles-bottom. This helps us keep load times down across the site and prevents loading excess styles globally.</p> -->
-
-
-
-					<p>Standalone stylesheets are docutmented by using the convention <code>styles-stylesheet-name</code> and should import and reference "styles-bottom". This reference establishes what code (if any) your standalone file is using in order to compile correctly.</p>
-					</div>
-
-                    <h2>Syntax formatting and spacing</h2>
-                    <div class="content-chunk">
-                        <p>To make sure we're all writing similarly-readable code we want to try to format our as so:</p>
-                        <ul>
-                            <li>Use four space indents (&ldquo;soft tabs&rdquo;) rather than tabs (&ldquo;hard tabs&rdquo;)</li>
-                            <li>Put spaces before <code>{</code> in rule declarations.</li>
-                              <li>Put spaces after <code>:</code> in property declarations.</li>
-                            <li>Put an empty line between rule declarations.</li>
-                        </ul>
-
-                        <pre><code>.thing {
-    display: block;
-    overflow: hidden;
-    padding: 0 1em;
-}
-
-.other-thing {
-    display: inline-block;
-    padding: 0 1em;
-}</code></pre>
+                        <p>Some browsers render reversed text (light text on darker background) very bulky, almost appearing as if it is bolded. <code>-webkit-font-smoothing: antialiased;</code> improves rendering dramatically.</p>
+                        <div class="fluid-image">
+                            <img src="http://d.pr/i/189LI+" alt="webkit-font-smoothing comparison">
+                        </div>
                     </div>
                     <div id="selector-grouping" class="content-chunk">
                         <h3>Selector grouping</h3>
